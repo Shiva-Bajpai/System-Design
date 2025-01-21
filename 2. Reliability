@@ -1,0 +1,18 @@
+Definition:
+Reliability is the ability of a system to perform its intended function consistently and correctly, even in the face of failures.
+
+Strategies for Ensuring Reliability:
+Redundancy:
+
+Duplicate critical components (e.g., servers, databases) to ensure backup in case of failure.
+Example: Two database servers (primary and replica) to ensure no data is lost during a failure.
+Fault Tolerance:
+
+Designing systems to continue functioning even if some components fail.
+Example: Netflix uses Chaos Engineering to test system reliability by deliberately causing failures.
+Data Backups:
+
+Regularly backup critical data to ensure recovery in case of disaster.
+Example: A bank might back up transaction logs every hour.
+Example:
+Online Banking System: Users expect uninterrupted service even if one of the servers goes down. Redundancy ensures backup systems take over seamlessly.
