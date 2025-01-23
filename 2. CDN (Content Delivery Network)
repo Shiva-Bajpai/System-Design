@@ -1,0 +1,17 @@
+Definition:
+A Content Delivery Network caches and delivers static assets (like images, videos, CSS, and JavaScript files) from servers located geographically close to users. This reduces latency and improves loading speeds.
+
+How CDNs Work:
+1. Edge Servers: Cache static assets at multiple locations worldwide.
+Example: A video streamed in the US is served from a nearby server in California.
+
+2. Origin Server: The original server where content is hosted.
+Example: If content is not available on edge servers, the request is forwarded to the origin server.
+
+Benefits:
+1. Reduced Latency: Content is delivered faster due to proximity.
+2. Lower Bandwidth Costs: Reduces the load on the origin server.
+3. Improved Availability: Even during high traffic, CDNs handle requests efficiently.
+
+Example:
+Streaming Services: Netflix uses CDNs to cache videos in multiple regions, ensuring smooth streaming for global users.
