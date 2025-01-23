@@ -1,0 +1,18 @@
+Definition:
+DNS is a hierarchical system that translates human-readable domain names (e.g., www.google.com) into IP addresses (e.g., 142.250.190.78) so computers can communicate with each other.
+
+How DNS Works:
+1. Recursive Resolver: Intermediary between the user and DNS hierarchy. It queries other DNS servers to resolve domain names.
+Example: Your ISP’s DNS resolver.
+
+2. Root Server: The first step in resolving a domain name. Directs queries to the correct TLD (Top-Level Domain) server.
+Example: For www.example.com, the root server identifies the .com TLD server.
+
+3. TLD Server: Responsible for specific domain extensions (e.g., .com, .org, .net).
+Example: Directs queries to the name server managing the domain.
+
+4. Authoritative Name Server: Provides the final IP address for the requested domain.
+Example: The server hosting the DNS records for example.com.
+
+Example:
+Visiting a Website: When a user types www.amazon.com, DNS translates it to Amazon's IP address, enabling the browser to load the website.
