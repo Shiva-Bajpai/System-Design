@@ -1,0 +1,18 @@
+Definition:
+A reverse proxy is a server that intercepts client requests and forwards them to backend servers. It acts as an intermediary between the client and the application server.
+
+Functions of a Reverse Proxy:
+1. Load Balancing: Distributes traffic to backend servers.
+Example: Nginx is often used as a reverse proxy to balance traffic across application servers.
+
+2. Caching: Stores responses for frequently requested content.
+Example: A reverse proxy caches product images for an e-commerce website.
+
+3. Security: Hides the IP addresses of backend servers, reducing the attack surface.
+Example: Protects the application server from direct attacks.
+
+4. SSL Termination: Manages HTTPS encryption and decryption.
+Example: The reverse proxy terminates SSL traffic and forwards it to backend servers over HTTP.
+
+Example:
+Web Application Firewall: A reverse proxy like Nginx or HAProxy protects a web application by filtering malicious traffic before it reaches the backend servers.
