@@ -1,0 +1,25 @@
+Definition:
+A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules.
+
+Types of Firewalls:
+1. Network Firewalls: Operate at the network layer to block unauthorized traffic.
+Example: Blocks traffic from known malicious IP addresses.
+
+2. Application Firewalls: Operate at the application layer to filter HTTP/HTTPS traffic.
+Example: Filters SQL injection attempts in web requests.
+
+3. Stateful Firewalls: Tracks active connections and only allows traffic for legitimate sessions.
+Example: Blocks unsolicited traffic while allowing responses to outgoing requests.
+
+Firewall Rules:
+1. Allow Rule: Permits specific traffic.
+Example: Allow SSH traffic from trusted IPs.
+
+2. Deny Rule: Blocks specific traffic.
+Example: Block all incoming traffic except HTTP and HTTPS.
+
+3. Rate Limiting: Limits the number of requests from a specific IP.
+Example: Mitigates DDoS attacks by rate-limiting traffic.
+
+Example:
+Corporate Network: A company uses a firewall to block access to unauthorized websites and protect sensitive data from external threats.
