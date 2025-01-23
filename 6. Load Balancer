@@ -1,0 +1,22 @@
+Definition:
+A load balancer is a device or software that distributes incoming traffic across multiple servers to ensure no single server becomes overwhelmed. It improves system availability, reliability, and performance.
+
+Types of Load Balancers:
+1. Layer 4 Load Balancer: Operates at the transport layer (TCP/UDP).
+Example: Distributes traffic based on IP address and port.
+
+2. Layer 7 Load Balancer: Operates at the application layer (HTTP/HTTPS).
+Example: Routes requests based on URLs, headers, or cookies.
+
+Strategies Used:
+1. Round Robin: Distributes requests sequentially across servers.
+Example: First request goes to Server 1, second to Server 2, and so on.
+
+2. Least Connections: Sends traffic to the server with the fewest active connections.
+Example: Useful for chat applications where connections stay open for longer periods.
+
+3. IP Hash: Maps clients to specific servers based on their IP address.
+Example: Ensures the same client connects to the same server (session persistence).
+
+Example:
+E-commerce Website: During sales, a load balancer distributes traffic between multiple web servers to handle millions of users simultaneously.
