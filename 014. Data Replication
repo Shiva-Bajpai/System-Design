@@ -1,0 +1,17 @@
+Definition
+Replication involves copying data from one database server to another to improve availability and fault tolerance.
+
+Types of Replication
+1. Master-Slave Replication: Data is written to a master node and replicated to slave nodes.
+Example Use Case: Read-heavy applications like analytics dashboards.
+
+2. Master-Master Replication: Data can be written to multiple nodes, and all nodes are synchronized.
+Example Use Case: Systems requiring high availability and write access.
+
+Advantages
+1. Ensures high availability and disaster recovery.
+2. Enables load balancing for read operations.
+
+Challenges
+Managing replication lag.
+Conflict resolution in master-master setups.
