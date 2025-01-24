@@ -1,0 +1,17 @@
+Definition:
+Partitioning involves splitting large datasets into smaller, manageable parts distributed across multiple servers.
+
+Types of Partitioning
+1. Horizontal Partitioning (Sharding): Dividing rows into smaller tables (shards) based on a key.
+Example: Users with IDs 1–1000 in one shard, 1001–2000 in another.
+
+2. Vertical Partitioning: Splitting tables into smaller ones by grouping columns.
+Example: Separating frequently accessed columns from less accessed ones.
+
+Advantages
+1. Improves performance by reducing query load on individual servers.
+2. Enhances scalability by distributing data.
+
+Challenges
+1. Handling cross-shard queries.
+2. Maintaining data consistency.
