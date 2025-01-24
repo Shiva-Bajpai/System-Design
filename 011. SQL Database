@@ -1,0 +1,18 @@
+Definition
+SQL (Structured Query Language) databases are relational databases that store data in a structured format using tables with rows and columns. They follow a predefined schema and enforce relationships between tables.
+
+Features
+1. Schema-Based: Rigid schema ensures data integrity.
+2. ACID Compliance: Ensures transactions are processed reliably.
+3. Relational Model: Data is stored in tables with defined relationships.
+
+Examples 
+1. MySQL: Open-source and widely used for web applications. This supports replication, partitioning, and indexing.
+Example Use Case: Online stores for managing product inventory and customer data.
+
+2. PostgreSQL: Advanced SQL database with support for JSON, custom data types, and full-text search.
+Example Use Case: Financial systems requiring complex queries and high reliability.
+
+When to Use
+Applications requiring strict consistency (e.g., banking systems).
+Systems with a clear relational data structure.
