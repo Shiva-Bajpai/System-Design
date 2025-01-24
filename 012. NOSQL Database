@@ -1,0 +1,24 @@
+Definition
+NoSQL (Not Only SQL) databases are non-relational databases that provide flexibility in data storage and retrieval. They support unstructured or semi-structured data.
+
+Types of NoSQL Databases
+Document Stores: MongoDB (stores data as JSON-like documents).
+Key-Value Stores: Redis (data stored as key-value pairs).
+Column-Family Stores: Cassandra (data stored in a columnar format).
+Graph Databases: Neo4j (stores relationships as graphs).
+Features
+Flexible Schema: No rigid schema, allowing dynamic data structures.
+Scalability: Designed for horizontal scaling.
+High Performance: Optimized for fast reads and writes.
+Examples
+MongoDB:
+
+Stores data in JSON-like documents.
+Example Use Case: Content management systems with flexible data models.
+Cassandra:
+
+Distributed, fault-tolerant database.
+Example Use Case: Social media platforms requiring high availability.
+When to Use
+Applications requiring high scalability (e.g., real-time analytics).
+Systems handling semi-structured or unstructured data.
