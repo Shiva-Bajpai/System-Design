@@ -1,0 +1,28 @@
+Definition:
+Caching involves storing frequently accessed data in memory for faster retrieval.
+
+How Caching Works: 
+1. Data is fetched from the database on the first request and stored in the cache. 
+2. Subsequent requests are served directly from the cache, reducing database load.
+
+Types of Caches
+1. Application-Level Cache: Implemented at the application layer (e.g., in-memory cache).
+Example: Caching user sessions in web applications.
+
+2. Distributed Cache: Shared across multiple servers for scalability.
+Example: Redis, Memcached.
+
+Examples
+1. Redis: In-memory key-value store.
+Example Use Case: Leaderboards in gaming applications.
+
+2. Memcached: Lightweight caching system for temporary data storage.
+Example Use Case: Caching results of expensive database queries.
+
+Advantages
+1. Reduces latency and improves performance.
+2. Decreases load on the database.
+
+Challenges
+1. Cache invalidation (keeping cached data up-to-date).
+2. Handling cache misses effectively.
