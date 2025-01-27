@@ -1,0 +1,26 @@
+Definition:
+Horizontal scaling involves adding more servers (nodes) to the system to distribute the load across multiple machines.
+
+How It Works:
+The system is designed to run on multiple servers working together. Load balancers distribute incoming traffic to these servers.
+
+Benefits:
+1. Virtually unlimited scalability as more servers can be added as needed.
+2. Fault tolerance: If one server fails, others can take over.
+3. Cost-effective: Commodity hardware can be used instead of expensive high-end machines.
+
+Challenges:
+1. Requires architectural changes, such as stateless design for servers.
+2. Complex to manage, as distributed systems need synchronization.
+3. Consistency issues may arise in distributed databases.
+
+Example:
+1. Video Streaming Service (e.g., Netflix):
+2. During peak hours, Netflix handles billions of requests. Instead of a single powerful server, it uses thousands of distributed servers worldwide to stream videos.
+
+Real-World Use Case:
+Web Servers: Systems like AWS EC2 allow deploying multiple servers with load balancers to handle high traffic.
+
+When to Use:
+1. For distributed systems or applications with unpredictable traffic spikes.
+2. When downtime is unacceptable during scaling.
