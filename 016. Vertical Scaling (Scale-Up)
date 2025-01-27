@@ -1,0 +1,23 @@
+Definition:
+Vertical scaling involves upgrading the hardware capacity of a single machine to handle more workload by adding resources like CPU, RAM, or storage.
+
+How It Works:
+The system remains on a single server, but its hardware capacity is increased to process more data or handle more requests.
+
+Benefits:
+1. Simpler to implement as no architectural changes are required.
+2. Useful for monolithic applications where scaling horizontally is complex.
+
+Challenges:
+1. Hardware limitations: A single machine can only be scaled up to a certain limit.
+2. Single point of failure: If the server fails, the entire system goes down.
+
+Cost: High-end hardware is expensive.
+Example: 1. E-Commerce Application: A small e-commerce store runs on a single server with 4 CPU cores and 8 GB RAM. As traffic grows, the server is upgraded to 8 CPU cores and 32 GB RAM to handle more users.
+Real-World Use Case:
+
+Relational Databases: SQL databases like MySQL or PostgreSQL often scale vertically as they are tightly coupled to a single instance.
+
+When to Use:
+1. When the system is small or in its early stages.
+2. When downtime for hardware upgrades is acceptable.
