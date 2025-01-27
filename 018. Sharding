@@ -1,0 +1,29 @@
+Definition:
+Sharding is a technique for distributing data horizontally by dividing it into smaller, independent chunks (shards) that are stored across multiple servers.
+
+How It Works:
+1. Each shard contains a subset of the data and handles requests for that subset.
+2. Shards can be based on a specific attribute, such as user ID or geographic region.
+
+Benefits:
+1. Improves performance by reducing the load on individual servers.
+2. Enables horizontal scaling of databases.
+3. Isolates failures: If one shard fails, only a portion of the data is affected.
+
+Challenges:
+1. Complex to implement and manage.
+2. Cross-shard queries are difficult and may lead to performance issues.
+3. Rebalancing shards (adding or removing) is challenging as data needs to be redistributed.
+
+Example:
+* Social Media Platform (e.g., Instagram):
+1. User data is distributed across shards based on user ID. For example:
+2. Users with IDs 1-1,000,000 are stored in Shard A.
+3. Users with IDs 1,000,001-2,000,000 are stored in Shard B.
+
+Real-World Use Case:
+MongoDB: Supports sharding natively for large-scale applications.
+
+When to Use:
+1. For large databases where a single server cannot handle all the data.
+2. Applications with clearly partitionable datasets.
