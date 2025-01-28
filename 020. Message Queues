@@ -1,0 +1,25 @@
+Definition:
+Message Queues are a mechanism for asynchronous communication where messages are sent by producers (senders) to a queue and are consumed by consumers (receivers) at their own pace. This decouples the sender and receiver, ensuring reliability and scalability.
+
+Key Characteristics:
+1. Asynchronous Processing: The producer doesn’t need to wait for the consumer to process the message.
+2. Decoupling Services: Producers and consumers can operate independently, even if one is down.
+3. Persistence: Messages are stored in the queue until processed, ensuring no data is lost.
+
+How It Works:
+A producer sends a message to the queue.
+The queue stores the message persistently until a consumer retrieves it.
+Consumers fetch messages from the queue for processing.
+
+Examples:
+1. RabbitMQ: A lightweight, open-source message broker that supports multiple messaging protocols.
+Example Scenario: An e-commerce platform where order placement (producer) and order processing (consumer) are separate systems. Orders are placed into a queue, and the processing system retrieves and processes them.
+
+2. Kafka: A distributed event-streaming platform often used as a message queue.
+Example Scenario: A banking system where transaction events are placed into a queue. Consumers retrieve and process these transactions for logging, fraud detection, or notifications.
+
+Advantages:
+1. Enables scaling by adding more consumers.
+2. Fault-tolerant as messages persist until processed.
+3. Decouples systems, reducing dependencies.
+
