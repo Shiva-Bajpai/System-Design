@@ -1,0 +1,26 @@
+Definition:
+Publish/Subscribe (Pub/Sub) is a messaging pattern where publishers send messages to a topic, and multiple subscribers listen to the topic to receive updates. The system is decoupled, meaning publishers and subscribers are unaware of each other’s existence.
+
+Key Characteristics:
+1. Topics: Messages are categorized into topics, and subscribers listen to specific topics.
+2. One-to-Many Communication: A single publisher can notify multiple subscribers.
+3. Event Distribution: Efficiently broadcasts messages to multiple consumers.
+
+How It Works:
+1. A publisher sends messages to a topic (or channel).
+2. The Pub/Sub system broadcasts the message to all subscribers of that topic.
+3. Subscribers receive and process the messages in real-time.
+
+Examples:
+1. Kafka: Kafka topics are used for broadcasting events.
+Example Scenario:
+In a stock market application, a publisher sends real-time stock price updates to a "Stock Prices" topic. All subscribers (traders, analytics platforms) receive the updates.
+
+2. Redis Streams: A lightweight, real-time Pub/Sub system.
+Example Scenario:
+A chat application where messages are sent to a "chatroom" topic. All participants subscribed to the chatroom receive the messages instantly.
+
+Advantages:
+1. High scalability for real-time updates.
+2. Simplifies communication in distributed systems.
+3. Supports asynchronous and event-driven workflows.
