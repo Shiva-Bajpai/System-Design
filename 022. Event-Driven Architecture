@@ -1,0 +1,41 @@
+Definition:
+Event-Driven Architecture (EDA) is a design pattern where actions in the system are triggered by events. An event is a state change or action that can lead to a reaction or chain of actions in the system.
+
+Key Characteristics:
+1. Events as Triggers: An event triggers one or more actions.
+2. Loose Coupling: Components are decoupled, interacting only via events.
+3, Real-Time Processing: Events are processed as they occur.
+
+Components of Event-Driven Architecture:
+1. Event Producers: Systems or components that generate events.
+Example: A user placing an order on an e-commerce website.
+
+2. Event Consumers: Systems or components that react to events.
+Example: Sending an email notification when an order is placed.
+
+3. Event Broker: Mediates between producers and consumers (e.g., Kafka, AWS EventBridge).
+
+How It Works:
+1. An event producer creates an event (e.g., a user uploads a file).
+2. The event broker distributes the event to interested consumers (e.g., a virus scanner, backup system).
+3. Event consumers process the event.
+
+Examples:
+1. Microservices System:
+Example Scenario:
+In an online food delivery app, the following events might occur:
+Order Placed → Notification service sends a confirmation email.
+Order Prepared → Delivery system assigns a driver.
+Driver Assigned → Notification service updates the user.
+
+2. IoT Systems:
+Example Scenario:
+A smart home system where:
+A motion sensor detects movement (event).
+Lights turn on (reaction).
+Camera starts recording (reaction).
+
+Advantages:
+1. Enables real-time reactions to events.
+2. Improves scalability and fault tolerance by decoupling components.
+3. Simplifies the development of asynchronous workflows.
