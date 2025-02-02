@@ -19,11 +19,27 @@ Example: Adding more web servers behind a load balancer to handle high traffic.
 Pros: Virtually unlimited scalability, redundancy.
 Cons: Complex architecture, requires changes in application design.
 
-Example: Imagine an e-commerce website like Amazon. During peak sales events (e.g., Black Friday), traffic spikes.
+**Example**
+Imagine an e-commerce website like Amazon. During peak sales events (e.g., Black Friday), traffic spikes.
 Vertical Scaling: Upgrade the database server to handle more transactions.
 Horizontal Scaling: Add multiple application servers to balance the load and ensure smooth user experience.
 
-- 📌 Reliability  
+- 📌 **Reliability:** Reliability is the ability of a system to perform its intended function consistently and correctly, even in the face of failures.
+
+**Strategies for Ensuring Reliability:**
+1. Redundancy: Duplicate critical components (e.g., servers, databases) to ensure backup in case of failure.
+Example: Two database servers (primary and replica) to ensure no data is lost during a failure.
+
+2. Fault Tolerance: Designing systems to continue functioning even if some components fail.
+Example: Netflix uses Chaos Engineering to test system reliability by deliberately causing failures.
+
+3. Data Backups: Regularly backup critical data to ensure recovery in case of disaster.
+Example: A bank might back up transaction logs every hour.
+
+**Example:**
+Online Banking System: Users expect uninterrupted service even if one of the servers goes down. Redundancy ensures backup systems take over seamlessly.
+
+
 - 📌 Availability  
 - 📌 Latency and Throughput  
 - 📌 CAP Theorem  
