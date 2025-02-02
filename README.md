@@ -64,8 +64,9 @@ Video Streaming Platform: Users expect uninterrupted video playback. A failover 
 
 ---**---
 
-- 📌 **Latency and Throughput:** Latency is the time delay between a user’s action (request) and the system’s response. It is typically measured in milliseconds (ms).
-
+- 📌 **Latency and Throughput:**
+  
+- **Latency** is the time delay between a user’s action (request) and the system’s response. It is typically measured in milliseconds (ms).
 **Types of Latency:**
 1. Network Latency: Time taken for data to travel between client and server.
 Example: Latency increases when streaming a video from a server located in another continent.
@@ -88,6 +89,33 @@ Example: Use binary search instead of linear search for faster data retrieval.
 
 **Example:**
 Gaming Application: Low latency is critical for real-time multiplayer games. Players in different countries are connected via geographically distributed servers to minimize latency.
+
+**Throughput:** Throughput is the rate at which a system processes data or requests per unit time. It is usually measured in requests per second (RPS) or transactions per second (TPS).
+
+
+● **Key Factors Affecting Throughput:**
+1. Hardware Capacity: CPU, memory, and disk speed influence the system’s ability to process data.
+Example: High-throughput systems often use SSDs and multi-core processors.
+
+2. Concurrency: Ability of the system to handle multiple requests simultaneously.
+Example: Thread pools in Java allow concurrent processing of tasks.
+
+3. Bottlenecks: Any component (e.g., database) that limits the overall system throughput.
+Example: A slow database query can reduce the throughput of a web application.
+
+
+● **Strategies to Improve Throughput:**
+1. Horizontal Scaling: Add more servers to distribute the load.
+Example: Distribute database queries across multiple replicas.
+
+2. Batch Processing: Group multiple requests and process them together.
+Example: Payment gateways process transactions in batches during peak hours.
+
+3. Queue Management: Use message queues (e.g., Kafka, RabbitMQ) to handle high traffic.
+Example: An e-commerce platform uses a queue to process millions of order requests during flash sales.
+
+**Example:**
+Payment Processing System: A payment gateway like PayPal needs to process thousands of transactions per second. Using distributed servers and message queues ensures high throughput.
 
 ___**___
 
