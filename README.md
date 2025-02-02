@@ -90,6 +90,7 @@ Example: Use binary search instead of linear search for faster data retrieval.
 **Example:**
 Gaming Application: Low latency is critical for real-time multiplayer games. Players in different countries are connected via geographically distributed servers to minimize latency.
 
+### Throughput
 **Throughput:** Throughput is the rate at which a system processes data or requests per unit time. It is usually measured in requests per second (RPS) or transactions per second (TPS).
 
 
