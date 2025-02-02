@@ -24,6 +24,8 @@ Imagine an e-commerce website like Amazon. During peak sales events (e.g., Black
 Vertical Scaling: Upgrade the database server to handle more transactions.
 Horizontal Scaling: Add multiple application servers to balance the load and ensure smooth user experience.
 
+---***---
+
 - 📌 **Reliability:** Reliability is the ability of a system to perform its intended function consistently and correctly, even in the face of failures.
 
 **Strategies for Ensuring Reliability:**
@@ -39,6 +41,7 @@ Example: A bank might back up transaction logs every hour.
 **Example:**
 Online Banking System: Users expect uninterrupted service even if one of the servers goes down. Redundancy ensures backup systems take over seamlessly.
 
+---**---
 
 - 📌 Availability  
 - 📌 Latency and Throughput  
