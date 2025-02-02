@@ -64,7 +64,33 @@ Video Streaming Platform: Users expect uninterrupted video playback. A failover 
 
 ---**---
 
-- 📌 Latency and Throughput  
+- 📌 **Latency and Throughput:** Latency is the time delay between a user’s action (request) and the system’s response. It is typically measured in milliseconds (ms).
+
+**Types of Latency:**
+1. Network Latency: Time taken for data to travel between client and server.
+Example: Latency increases when streaming a video from a server located in another continent.
+
+2. Processing Latency: Time taken by the server to process the request.
+Example: A complex database query might take several seconds to execute.
+
+3. Disk Latency: Time taken to read or write data to storage.
+Example: SSDs have lower latency compared to traditional HDDs.
+Strategies to Reduce Latency:
+
+4. Content Delivery Networks (CDNs): Store copies of static assets (images, videos) closer to users.
+Example: Akamai or Cloudflare reduces video streaming latency by caching content near users.
+
+5. Caching: Store frequently accessed data in-memory for quicker access.
+Example: Use Redis to cache user session data.
+
+6. Efficient Algorithms: Optimize code to reduce processing time.
+Example: Use binary search instead of linear search for faster data retrieval.
+
+**Example:**
+Gaming Application: Low latency is critical for real-time multiplayer games. Players in different countries are connected via geographically distributed servers to minimize latency.
+
+___**___
+
 - 📌 CAP Theorem  
 
 ### **2. Networking Concepts**
