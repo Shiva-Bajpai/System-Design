@@ -43,7 +43,27 @@ Online Banking System: Users expect uninterrupted service even if one of the ser
 
 ---**---
 
-- 📌 Availability  
+- 📌 **Availability:** Availability is the percentage of time a system remains operational and accessible to users.
+
+**Formula:**
+Availability (%) = Uptime / Uptime + Downtime × 100 
+
+**Strategies for High Availability:**
+1. Load Balancers: Distribute traffic among servers to ensure no single server becomes a bottleneck.
+Example: AWS Elastic Load Balancer ensures traffic is spread across multiple servers.
+Failover Mechanism:
+
+2. Automatically switch to a backup system if the primary system fails.
+Example: A backup server takes over if the main server crashes.
+
+3. Replication: Maintain multiple copies of data or services in different regions.
+Example: Cloudflare’s distributed servers ensure website availability even during regional outages.
+
+**Example:**
+Video Streaming Platform: Users expect uninterrupted video playback. A failover mechanism ensures smooth streaming if one server goes down.
+
+---**---
+
 - 📌 Latency and Throughput  
 - 📌 CAP Theorem  
 
