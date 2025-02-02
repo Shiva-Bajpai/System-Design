@@ -6,7 +6,24 @@ Welcome to the **System Design Learning Playlist**, a curated collection of topi
 
 ## **Contents**  
 ### **1. Basics of System Design**
-- 📌 Scalability  
+- 📌 Scalability:
+Definition: Scalability refers to the ability of a system to handle increased workload by either adding resources or making better use of existing resources without significant performance degradation.
+
+Types of Scalability:
+Vertical Scaling (Scale-Up): Adding more resources (CPU, RAM, storage) to a single server.
+Example: Upgrading from a 4-core CPU to an 8-core CPU on a database server.
+Pros: Simple implementation, no changes in architecture.
+Cons: Limited by hardware capacity and can become expensive.
+
+Horizontal Scaling (Scale-Out): Adding more servers to distribute the load.
+Example: Adding more web servers behind a load balancer to handle high traffic.
+Pros: Virtually unlimited scalability, redundancy.
+Cons: Complex architecture, requires changes in application design.
+
+Example: Imagine an e-commerce website like Amazon. During peak sales events (e.g., Black Friday), traffic spikes.
+Vertical Scaling: Upgrade the database server to handle more transactions.
+Horizontal Scaling: Add multiple application servers to balance the load and ensure smooth user experience.
+
 - 📌 Reliability  
 - 📌 Availability  
 - 📌 Latency and Throughput  
