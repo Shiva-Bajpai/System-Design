@@ -6,16 +6,15 @@ Welcome to the **System Design Learning Playlist**, a curated collection of topi
 
 ## **Contents**  
 ### **1. Basics of System Design**
-- 📌 Scalability:
-Definition: Scalability refers to the ability of a system to handle increased workload by either adding resources or making better use of existing resources without significant performance degradation.
 
-Types of Scalability:
-Vertical Scaling (Scale-Up): Adding more resources (CPU, RAM, storage) to a single server.
+- 📌 **Scalability:** Scalability refers to the ability of a system to handle increased workload by either adding resources or making better use of existing resources without significant performance degradation.
+
+**Types of Scalability:**
+1. Vertical Scaling (Scale-Up): Adding more resources (CPU, RAM, storage) to a single server.
 Example: Upgrading from a 4-core CPU to an 8-core CPU on a database server.
 Pros: Simple implementation, no changes in architecture.
 Cons: Limited by hardware capacity and can become expensive.
-
-Horizontal Scaling (Scale-Out): Adding more servers to distribute the load.
+2. Horizontal Scaling (Scale-Out): Adding more servers to distribute the load.
 Example: Adding more web servers behind a load balancer to handle high traffic.
 Pros: Virtually unlimited scalability, redundancy.
 Cons: Complex architecture, requires changes in application design.
