@@ -120,7 +120,38 @@ Payment Processing System: A payment gateway like PayPal needs to process thousa
 
 ___**___
 
-- 📌 CAP Theorem  
+- 📌 CAP Theorem
+
+**CAP Theorem** states that a distributed data store can only guarantee two out of the following three properties: **Consistency, Availability, and Partition Tolerance**. It is fundamental to understanding trade-offs in distributed systems.  
+
+**● Key Components of CAP Theorem:**  
+
+- **Consistency (C):** Every read receives the most recent write or an error.  
+  **Example:** A relational database like MySQL ensures consistency by using transactions with ACID properties.  
+
+- **Availability (A):** Every request gets a response, even if it is not the most recent.  
+  **Example:** A caching system like Redis ensures high availability by always responding with the closest available data.  
+
+- **Partition Tolerance (P):** The system continues to operate despite network failures that split communication between nodes.  
+  **Example:** Apache Cassandra is designed to remain functional even when network partitions occur.  
+
+**● CAP Theorem Trade-offs:**  
+
+1. **CP (Consistency + Partition Tolerance):**  
+   - Prioritizes accuracy but may sacrifice availability.  
+   - Example: MongoDB in strong consistency mode ensures data correctness at the cost of potential downtime.  
+
+2. **AP (Availability + Partition Tolerance):**  
+   - Ensures the system remains responsive but may return stale data.  
+   - Example: DNS servers prioritize availability even if some updates take time to propagate.  
+
+3. **CA (Consistency + Availability) [Not Possible in Distributed Systems]:**  
+   - A system that guarantees both but cannot handle network failures.  
+   - Example: A single-node database like PostgreSQL maintains both but isn’t fault-tolerant across networks.  
+
+ 
+ **● Real-World Example:**  
+1. Global Payment System: A system like Visa or PayPal needs **high availability (A) and partition tolerance (P)** to handle millions of transactions worldwide. It may allow some temporary inconsistencies, such as showing a slightly outdated balance, to ensure uninterrupted service.
 
 ### **2. Networking Concepts**
 - 📌 Load Balancer  
