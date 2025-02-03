@@ -153,8 +153,28 @@ ___**___
  **● Real-World Example:**  
 1. Global Payment System: A system like Visa or PayPal needs **high availability (A) and partition tolerance (P)** to handle millions of transactions worldwide. It may allow some temporary inconsistencies, such as showing a slightly outdated balance, to ensure uninterrupted service.
 
+___**___
+
 ### **2. Networking Concepts**
-- 📌 Load Balancer  
+- 📌 **Load Balancer**
+A Load Balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed. It improves performance, reliability, and fault tolerance.
+
+**● Key Functions of a Load Balancer:**
+1. Traffic Distribution: Spreads requests across multiple servers to optimize resource usage.
+Example: An e-commerce website like Amazon uses load balancers to handle millions of users.
+2. Health Monitoring: Detects and removes unhealthy servers from the pool.
+Example: AWS Elastic Load Balancer (ELB) automatically routes traffic to healthy instances.
+3. Failover Support: Redirects traffic if a server goes down.
+Example: A cloud-based service reroutes requests to backup servers during an outage.
+
+**● Types of Load Balancers:**
+1. Layer 4 (Transport Layer): Directs traffic based on IP and port.
+Example: TCP Load Balancer routes packets efficiently at the network level.
+2. Layer 7 (Application Layer): Directs traffic based on content, such as URLs or cookies.
+Example: An HTTP load balancer routes API requests to the appropriate microservice.
+
+___**___
+
 - 📌 CDN (Content Delivery Network)  
 - 📌 DNS (Domain Name System)  
 - 📌 Reverse Proxy  
